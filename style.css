@@ -1,0 +1,114 @@
+/* Global Styles */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url('https://www.linkpicture.com/q/LPic6447c06ca2dee1886160076.png');
+  background-size: cover;
+  font-family: Arial, sans-serif;
+  background-color: #F5F5F5;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+header {
+  background-color: #008000; /* or any other shade of green */
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+button {
+  background-color: #003D71;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #002448;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input, select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+input:focus, select:focus {
+  outline: none;
+  box-shadow: 0 0 5px #003D71;
+  border-color: #003D71;
+}
+
+/* Pre-Enrollment Form */
+
+#fullname {
+  text-transform: capitalize;
+}
+
+#course {
+  text-transform: capitalize;
+}
+
+/* Login Form */
+
+form:last-of-type {
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+form:last-of-type label, form:last-of-type input, form:last-of-type button {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+form:last-of-type button {
+  background-color: #FFC107;
+  color: black;
+}
+
+form:last-of-type button:hover {
+  background-color: #FFA000;
+}
+
+/* Responsive Styles */
+
+@media screen and (max-width: 600px) {
+  main {
+    padding: 10px;
+  }
+}
