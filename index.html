@@ -57,14 +57,32 @@
         <div style="background-color: #008000; color: white; padding: 10px;">
   <h2>Login to Admin Page</h2>
 </div>
-        <form action="#" method="POST">
-          <label for="username">Username:</label>
-          <input type="text" id="username" name="username" required>
-          <label for="password">Password:</label>
-          <input type="password" id="password" name="password" required>
-          <button type="submit">Login</button>      
-        </form>
+        <form id="admin-form">
+  <label for="username">Username:</label>
+  <input type="text" id="username" name="username" required>
+  <label for="password">Password:</label>
+  <input type="password" id="password" name="password" required>
+  <button type="submit">Login</button>
+</form>
       </section>
     </main>
+    <script>
+      document.getElementById('admin-form').addEventListener('submit', function(e) {
+  e.preventDefault(); // Prevent form submission
+
+  // get the entered username and password
+  var username = document.getElementById('username').value;
+  var password = document.getElementById('password').value;
+
+  // check if the entered credentials are correct
+  if (username === 'admin' && password === 'password') {
+    // opens a tab for admin page if the credentials are correct
+    window.open('admin.html', '_blank');
+  } else {
+    // this will display if the user and password is incorrect
+    alert('Invalid username or password');
+  }
+});
+    </script>
   </body>
 </html>
